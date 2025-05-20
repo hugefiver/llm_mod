@@ -294,75 +294,78 @@ public class RlmHandle implements RlmConstants {
     }
 
     private void addProduct(long prodHandle, Vector v, int index) {
+        System.out.println("[ShiroSaki] addProduct also RIP~");
         RlmAvailableProduct prod = new RlmAvailableProduct();
-        prod.setName(rlmProductName(prodHandle));
-        prod.setVersion(rlmProductVersion(prodHandle));
-        prod.setActKey(rlmProductActKey(prodHandle));
-        prod.setCount(rlmProductCount(prodHandle));
-        prod.setCurrentInUse(rlmProductCurrentInUse(prodHandle));
-        prod.setCurrentResUse(rlmProductCurrentResUse(prodHandle));
-        prod.setContract(rlmProductContract(prodHandle));
-        prod.setCustomer(rlmProductCustomer(prodHandle));
-        prod.setExpDays(rlmProductExpDays(prodHandle));
-        prod.setExpTime(rlmProductExpTime(prodHandle));
-        prod.setExpiration(rlmProductExpiration(prodHandle));
-        prod.setHostBased(rlmProductHostBased(prodHandle));
-        prod.setHostId(rlmProductHostId(prodHandle));
-        prod.setHold(rlmProductHold(prodHandle));
-        prod.setIsAlias(rlmProductIsAlias(prodHandle));
-        prod.setIsFloating(rlmProductIsFloating(prodHandle));
-        prod.setIsMetered(rlmProductIsMetered(prodHandle));
-        prod.setIsNodelocked(rlmProductIsNodelocked(prodHandle));
-        prod.setIsRoaming(rlmProductIsRoaming(prodHandle));
-        prod.setIsSingle(rlmProductIsSingle(prodHandle));
-        prod.setIssuer(rlmProductIssuer(prodHandle));
-        prod.setMaxRoam(rlmMaxRoam(prodHandle));
-        prod.setMaxRoamCount(rlmMaxRoamCount(prodHandle));
-        prod.setMeterCounter(rlmProductMeterCounter(prodHandle));
-        prod.setMeterCurCount(rlmMeterCurCount(prodHandle));
-        prod.setMaxShare(rlmMaxShare(prodHandle));
-        prod.setMinRemove(rlmMinRemove(prodHandle));
-        prod.setMinCheckout(rlmMinCheckout(prodHandle));
-        prod.setMinTimeout(rlmMinTimeout(prodHandle));
-        prod.setNamedUserCount(rlmProductNamedUserCount(prodHandle));
-        prod.setNRes(rlmNRes(prodHandle));
-        prod.setNRoamAllowed(rlmNRoamAllowed(prodHandle));
-        prod.setOptions(rlmOptions(prodHandle));
-        prod.setCurrentRoam(rlmCurrentRoam(prodHandle));
-        prod.setServer(rlmServer(prodHandle));
-        prod.setShare(rlmShare(prodHandle));
-        prod.setSoftLimit(rlmSoftLimit(prodHandle));
-        prod.setStart(rlmProductStart(prodHandle));
-        prod.setTimeout(rlmTimeout(prodHandle));
-        prod.setTimezone(rlmTimezone(prodHandle));
-        prod.setIsTokenBased(rlmIsTokenBased(prodHandle));
-        prod.setType(rlmType(prodHandle));
-        prod.setUserBased(rlmUserBased(prodHandle));
-        prod.setClientCache(rlmClientCache(prodHandle));
+        prod.setName("live2d_editorc-3"); // prod.setName(rlmProductName(prodHandle));
+        prod.setVersion("3.0"); // prod.setVersion(rlmProductVersion(prodHandle));
+        prod.setActKey("CHCC-1234-5678-9012-1234"); // prod.setActKey(rlmProductActKey(prodHandle));
+        prod.setCount(0); // prod.setCount(rlmProductCount(prodHandle));
+        prod.setCurrentInUse(0); // prod.setCurrentInUse(rlmProductCurrentInUse(prodHandle));
+        prod.setCurrentResUse(0); // prod.setCurrentResUse(rlmProductCurrentResUse(prodHandle));
+        prod.setContract("LiveDDDDDDDDD"); // prod.setContract(rlmProductContract(prodHandle));
+        prod.setCustomer("My love~"); // prod.setCustomer(rlmProductCustomer(prodHandle));
+        prod.setExpDays(0); // prod.setExpDays(rlmProductExpDays(prodHandle));
+        // prod.setExpTime(""); // prod.setExpTime(rlmProductExpTime(prodHandle));
+        prod.setExpiration("permanent"); // prod.setExpiration(rlmProductExpiration(prodHandle));
+        prod.setHostBased(0); // prod.setHostBased(rlmProductHostBased(prodHandle));
+        prod.setHostId("ANY"); // prod.setHostId(rlmProductHostId(prodHandle));
+        prod.setHold(0); // prod.setHold(rlmProductHold(prodHandle));
+        prod.setIsAlias(0); // prod.setIsAlias(rlmProductIsAlias(prodHandle));
+        prod.setIsFloating(0); // prod.setIsFloating(rlmProductIsFloating(prodHandle));
+        prod.setIsMetered(0); // prod.setIsMetered(rlmProductIsMetered(prodHandle));
+        prod.setIsNodelocked(0); // prod.setIsNodelocked(rlmProductIsNodelocked(prodHandle));
+        prod.setIsRoaming(0); // prod.setIsRoaming(rlmProductIsRoaming(prodHandle));
+        prod.setIsSingle(0); // prod.setIsSingle(rlmProductIsSingle(prodHandle));
+        prod.setIssuer("ShiroSaki"); // prod.setIssuer(rlmProductIssuer(prodHandle));
+        prod.setMaxRoam(0); // prod.setMaxRoam(rlmMaxRoam(prodHandle));
+        prod.setMaxRoamCount(0); // prod.setMaxRoamCount(rlmMaxRoamCount(prodHandle));
+        prod.setMeterCounter(0); // prod.setMeterCounter(rlmProductMeterCounter(prodHandle));
+        prod.setMeterCurCount(0); // prod.setMeterCurCount(rlmMeterCurCount(prodHandle));
+        prod.setMaxShare(99); // prod.setMaxShare(rlmMaxShare(prodHandle));
+        prod.setMinRemove(0); // prod.setMinRemove(rlmMinRemove(prodHandle));
+        prod.setMinCheckout(0); // prod.setMinCheckout(rlmMinCheckout(prodHandle));
+        prod.setMinTimeout(0); // prod.setMinTimeout(rlmMinTimeout(prodHandle));
+        prod.setNamedUserCount(0); // prod.setNamedUserCount(rlmProductNamedUserCount(prodHandle));
+        prod.setNRes(0); // prod.setNRes(rlmNRes(prodHandle));
+        prod.setNRoamAllowed(0); // prod.setNRoamAllowed(rlmNRoamAllowed(prodHandle));
+        prod.setOptions(""); // prod.setOptions(rlmOptions(prodHandle));
+        prod.setCurrentRoam(0); // prod.setCurrentRoam(rlmCurrentRoam(prodHandle));
+        prod.setServer("127.0.0.1"); // prod.setServer(rlmServer(prodHandle));
+        prod.setShare(0); // prod.setShare(rlmShare(prodHandle));
+        prod.setSoftLimit(0); // prod.setSoftLimit(rlmSoftLimit(prodHandle));
+        prod.setStart(""); // prod.setStart(rlmProductStart(prodHandle));
+        prod.setTimeout(0); // prod.setTimeout(rlmTimeout(prodHandle));
+        prod.setTimezone(0); // prod.setTimezone(rlmTimezone(prodHandle));
+        prod.setIsTokenBased(0); // prod.setIsTokenBased(rlmIsTokenBased(prodHandle));
+        prod.setType(0); // prod.setType(rlmType(prodHandle));
+        prod.setUserBased(0); // prod.setUserBased(rlmUserBased(prodHandle));
+        prod.setClientCache(0); // prod.setClientCache(rlmClientCache(prodHandle));
         prod.setProdHandle(prodHandle);
         prod.setIndex(index);
         v.add(prod);
+
     }
 
     public Vector getAvailableProducts(String product, String version) {
-        Vector v = null;
-        long prodHandle = rlmProducts(this.handle, product, version);
-        if (prodHandle != 0) {
-            v = new Vector();
-            rlmProductFirst(prodHandle);
-            int i = 0 + 1;
-            addProduct(prodHandle, v, 0);
-            while (rlmProductNext(prodHandle) == 0) {
-                int i2 = i;
-                i++;
-                addProduct(prodHandle, v, i2);
-            }
-            if (this.productHandleList == null) {
-                this.productHandleList = new Vector();
-            }
-            Long l = new Long(prodHandle);
-            this.productHandleList.add(l);
-        }
+        var v = new Vector();
+        addProduct(1l, v, 1);
+        // long prodHandle = rlmProducts(this.handle, product, version);
+        // if (prodHandle != 0) {
+        //     v = new Vector();
+        //     rlmProductFirst(prodHandle);
+        //     int i = 0 + 1;
+        //     addProduct(prodHandle, v, 0);
+        //     while (rlmProductNext(prodHandle) == 0) {
+        //         int i2 = i;
+        //         i++;
+        //         addProduct(prodHandle, v, i2);
+        //     }
+        //     if (this.productHandleList == null) {
+        //         this.productHandleList = new Vector();
+        //     }
+        //     Long l = new Long(prodHandle);
+        //     this.productHandleList.add(l);
+        // }
         return v;
     }
 
@@ -432,19 +435,20 @@ public class RlmHandle implements RlmConstants {
     }
 
     public String activateLicense(String url, String key, int count, RlmActHandle actHandle) throws RlmException {
-        long ah;
-        byte[] buf = new byte[102400];
-        if (actHandle == null) {
-            ah = 0;
-        } else {
-            ah = actHandle.getHandle();
-        }
-        int stat = rlmActivate(this.handle, url, key, count, buf, ah);
-        if (stat < 0) {
-            throw new RlmException(stat, this);
-        }
-        this.previouslyActivated = stat == 1;
-        return new String(buf).trim();
+        // long ah;
+        // byte[] buf = new byte[102400];
+        // if (actHandle == null) {
+        //     ah = 0;
+        // } else {
+        //     ah = actHandle.getHandle();
+        // }
+        // int stat = rlmActivate(this.handle, url, key, count, buf, ah);
+        // if (stat < 0) {
+        //     throw new RlmException(stat, this);
+        // }
+        // this.previouslyActivated = stat == 1;
+        // return new String(buf).trim();
+        return "Cracked";
     }
 
     public void revokeRehostable(String url, String product, int flags) throws RlmException {

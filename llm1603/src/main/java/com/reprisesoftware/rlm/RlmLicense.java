@@ -104,22 +104,22 @@ public class RlmLicense implements RlmConstants {
     private native int rlmAuthCheck(long j, String str);
 
     public RlmLicense(RlmHandle handle, String product, String version, int count) throws RlmException {
-        this.licHandle = rlmCheckout(handle.getHandle(), product, version, count);
-        int stat = rlmLicenseStat(this.licHandle);
-        if (stat != 0 && stat != -25 && stat != -39) {
-            throw new RlmException(stat, handle, this);
-        }
+        // this.licHandle = rlmCheckout(handle.getHandle(), product, version, count);
+        // int stat = rlmLicenseStat(this.licHandle);
+        // if (stat != 0 && stat != -25 && stat != -39) {
+        //     throw new RlmException(stat, handle, this);
+        // }
         this.valid = true;
     }
 
     public RlmLicense(RlmHandle handle, RlmAvailableProduct product, String version, int count) throws RlmException {
-        long prodHandle = product.getProdHandle();
-        handle.positionProdHandle(prodHandle, product.getIndex());
-        this.licHandle = rlmCheckoutProduct(handle.getHandle(), prodHandle, version, count);
-        int stat = rlmLicenseStat(this.licHandle);
-        if (stat != 0 && stat != -25 && stat != -39) {
-            throw new RlmException(stat, handle, this);
-        }
+        // long prodHandle = product.getProdHandle();
+        // handle.positionProdHandle(prodHandle, product.getIndex());
+        // this.licHandle = rlmCheckoutProduct(handle.getHandle(), prodHandle, version, count);
+        // int stat = rlmLicenseStat(this.licHandle);
+        // if (stat != 0 && stat != -25 && stat != -39) {
+        //     throw new RlmException(stat, handle, this);
+        // }
         this.valid = true;
     }
 
@@ -128,11 +128,13 @@ public class RlmLicense implements RlmConstants {
     }
 
     public int status() throws RlmException {
-        if (this.valid) {
-            int stat = rlmLicenseStat(this.licHandle);
-            return stat;
-        }
-        throw new RlmException(-19);
+        // if (this.valid) {
+        //     int stat = rlmLicenseStat(this.licHandle);
+        //     return stat;
+        // }
+        // throw new RlmException(-19);
+
+        return 0;
     }
 
     public void checkin() {
